@@ -4,8 +4,59 @@
 }}
 
 <main>
-	{{>heading title="Index" info=data.test}}
+	{{!-- {{>heading title="Index" info=data.test}} --}}
+<div class="card">
+        <h1 class="title">To-do list</h1>
+        <div class="form">
+            <input class="input" type="text" placeholder="Введіть задачу">
+            <button class="btn">Додати</button>
+        </div>
+
+        <div class="list">
+            <div>
+                <span class="task__number">1.</span>
+                <span class="task__text">Some placeholder content in a paragraph below the heading and date.</span>
+            </div>
+            <div class="task__icon">
+                <img class="icon" width="32px" height="32px"  src="/svg/icon_to_do.svg" alt="">
+                <img class="icon" width="32px" height="32px" src="/svg/icon_delete.svg" alt="">
+            </div>
+        </div>
+
+        <div class="list">
+            <div>
+                <span class="task__number">2.</span>
+                <span class="task__text done">Some placeholder content in a paragraph below the heading and date.</span>
+            </div>
+            <div class="task__icon">
+                <img class="icon " width="32px" height="32px"  src="/svg/icon_done.svg" alt="">
+                <img class="icon" width="32px" height="32px" src="/svg/icon_delete.svg" alt="">
+            </div>
+        </div>
+         <div class="list">
+            <div>
+                <span class="task__number">1.</span>
+                <span class="task__text">Some placeholder content in a paragraph below the heading and date.</span>
+            </div>
+            <div class="task__icon">
+                <img class="icon" width="32px" height="32px"  src="/svg/icon_to_do.svg" alt="">
+                <img class="icon" width="32px" height="32px" src="/svg/icon_delete.svg" alt="">
+            </div>
+        </div>
+
+
+        {{!-- <ol class="list">
+            <li class="task">
+                <div>
+                    <span></span>
+                </div>
+            </li>
+        </ol>
+    </div> --}}
 </main>
+
+
+
 
 {{!
     Цей код містить лише те, що буде виводитись в <body>
