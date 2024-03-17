@@ -3,57 +3,32 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<main>
+
 	{{!-- {{>heading title="Index" info=data.test}} --}}
-<div class="card">
+    <div class="page">
         <h1 class="title">To-do list</h1>
+        
         <div class="form">
-            <input class="input" type="text" placeholder="Введіть задачу">
-            <button class="btn">Додати</button>
+            <input class="form__input" type="text" placeholder="Введіть задачу">
+            <button class="form__button">Додати</button>
         </div>
 
-        <div class="list">
-            <div>
+    <main class="task__list"></main>
+    </div>
+
+    <template id='task'>      
+            <div class="task">
                 <span class="task__number">1.</span>
                 <span class="task__text">Some placeholder content in a paragraph below the heading and date.</span>
+                 <button class="task__button task__button--do">                   
+                 </button>
+                <button class="task__button task__button--cancel">                     
+                 </button>                 
             </div>
-            <div class="task__icon">
-                <img class="icon" width="32px" height="32px"  src="/svg/icon_to_do.svg" alt="">
-                <img class="icon" width="32px" height="32px" src="/svg/icon_delete.svg" alt="">
-            </div>
-        </div>
-
-        <div class="list">
-            <div>
-                <span class="task__number">2.</span>
-                <span class="task__text done">Some placeholder content in a paragraph below the heading and date.</span>
-            </div>
-            <div class="task__icon">
-                <img class="icon " width="32px" height="32px"  src="/svg/icon_done.svg" alt="">
-                <img class="icon" width="32px" height="32px" src="/svg/icon_delete.svg" alt="">
-            </div>
-        </div>
-         <div class="list">
-            <div>
-                <span class="task__number">1.</span>
-                <span class="task__text">Some placeholder content in a paragraph below the heading and date.</span>
-            </div>
-            <div class="task__icon">
-                <img class="icon" width="32px" height="32px"  src="/svg/icon_to_do.svg" alt="">
-                <img class="icon" width="32px" height="32px" src="/svg/icon_delete.svg" alt="">
-            </div>
-        </div>
+    </template>
 
 
-        {{!-- <ol class="list">
-            <li class="task">
-                <div>
-                    <span></span>
-                </div>
-            </li>
-        </ol>
-    </div> --}}
-</main>
+       
 
 
 
